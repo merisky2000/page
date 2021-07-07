@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+  <head>
+    <title>Modelo OSI</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,700%7CPoppins:300,400,500,700,900">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>.ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+  </head>
+  <body>
+    <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <div class="preloader">
+      <div class="preloader-body">
+        <div class="cssload-container">
+          <div class="cssload-speeding-wheel"></div>
+        </div>
+        <p>Loading...</p>
+      </div>
+    </div>
+    <div class="page">
+      <header class="section page-header">
+        <!--RD Navbar-->
+        <div class="rd-navbar-wrap">
+          <nav class="rd-navbar rd-navbar-classic" data-layout="rd-navbar-fixed" data-sm-layout="rd-navbar-fixed" data-md-layout="rd-navbar-fixed" data-md-device-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-device-layout="rd-navbar-static" data-xl-layout="rd-navbar-static" data-xl-device-layout="rd-navbar-static" data-lg-stick-up-offset="46px" data-xl-stick-up-offset="46px" data-xxl-stick-up-offset="46px" data-lg-stick-up="true" data-xl-stick-up="true" data-xxl-stick-up="true">
+            
+            <div class="rd-navbar-main-outer">
+              <div class="rd-navbar-main">
+                <!--RD Navbar Panel-->
+                <div class="rd-navbar-panel">
+                  <!--RD Navbar Toggle-->
+                  <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap"><span></span></button>
+                  <!--RD Navbar Brand-->
+                  <div class="rd-navbar-brand">
+                    <!--Brand--><a class="brand" href="index.html"><B>REDES INFORMATICAS</B></a>
+                  </div>
+                </div>
+                <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Inicio</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="topologia.html">Topologia</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="tcp.html">Modelo OSI</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="osi.html"> Modelo TCP/IP</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="calculadora.html">calculadora</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="ipv4.html">ipv4</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="ipv6.html">ipv6</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      <section class="section section-intro context-dark">
+        
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-xl-12 text-center">
+              <h2 class="font-weight-bold wow fadeInLeft">MODELO OSI</h2>
+              <p class="intro-description wow fadeInRight">El modelo de interconexión de sistemas abiertos, también llamado OSI (en inglés open system interconnection) es el modelo de red descriptivo propuesto por la Organización Internacional para la Estandarización (ISO) en el año 1977 y aprobado en el año 1984.
+
+Es una normativa formada por siete capas que define las diferentes fases por las que deben pasar los datos para viajar de un dispositivo a otro sobre una red de comunicaciones.
+
+Constituye por tanto un marco de referencia para la definición de arquitecturas de interconexión de sistemas de comunicaciones.
+
+En este estándar no se define una implementación de una arquitectura de red, sino que se establece un modelo sobre el cual comparar otras arquitecturas y protocolos.
+
+El modelo OSI establece una arquitectura jerárquica estructurada en 7 capas. La idea es descomponer el proceso complejo de la comunicación en varios problemas más sencillos y asignar dichos problemas a las distintas capas, de forma que una capa no tenga que preocuparse por lo que hacen las demás. Según la estructura jerárquica, cada capa realiza servicios para la capa inmediatamente superior, a la que devuelve los resultados obtenidos, y a su vez demanda servicios a la capa inmediatamente inferior.</p>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <!--Base typography -->
+      <section>
+          <br>
+          <H3>
+            <div class="text-center">
+              Capas del modelo OSI
+            </div>
+            <div class="container" style="margin-right: 30px;margin-left: 30px">
+          </H3>
+          <br>
+          <div class="card  ">
+            <div class="g" style="margin-right: 30px;margin-left: 30px">
+            <h4>capa1:"Capa física"</h4>
+            <br>
+            Esta capa ofrece a los niveles superiores un servicio de transmisión de datos, es decir, proporciona un mecanismo para enviar y recibir bits empleando el canal de comunciación.
+
+Se encarga de las especificaciones mecánicas, eléctricas, funcionales y de procedimientos de la transmisión física.
+<br>
+Mecánicas:
+Se refiere a las características físicas del elemento de conexión con la red, es decir, a las propiedades de la interfaz física con el medio de comunicación. Por ejemplo, las dimensiones y forma del conector, el número de cables usados en la conexión, el número de pines del conector, el tamaño del cable, el tipo de antena, etc.
+<br>
+Eléctricas:
+Especifica las características eléctricas empleadas, por ejemplo, la tensión usada, velocidad de transmisión, intensidad en los pines, etc.
+Funcionales:
+Define las funciones de cada uno de los circuitos del elemento de interconexión a la red, por ejemplo, pin X para transmitir, pin Y para recibir, etc.
+De procedimiento:
+<br>
+Establece los pasos a realizar para transmitir información a través del medio físico.
+</div>
+          </div>
+<br>
+          <div class="card  ">
+            <div class="g" style="margin-right: 30px;margin-left: 30px">
+            <h4>capa2:"Capa de enlace de datos"</h4>
+            <br>
+            La capa de enlace de datos utiliza la funcionlalidad ofrecida por la capa física. Anunque la capa física ofrece un mecanismo para enviar/recibir datos, esta capa no se encarga de comprobar si los datos recibidos son correctos.
+<br>
+La capa de enlace de datos tiene como objetivo ofrecer a los niveles superiores un enlace libre de errores, proporcionando mecanismos para el control y la detección de errores. Además, ofrece medios para activar, mantener y desactivar este enlace.
+<br>
+Por otra parte, se encarga del control del enlace de datos, realizando tareas como la delimitación de dichas tramas, reconicimiento de tramas, resolución de pérdidas de datos y duplicaciones, control de flujo y control del sentido de la transmisión.
+<br>
+Esta capa se ocupa, en resumen, de los siguientes aspectos:
+<br><br>
+-Direccionamiento físico
+<br>
+-Topología de la red
+<br>
+-División de los datos en tramas
+<br>
+-Acceso al medio
+<br>
+-Detección de errores
+<br>
+-Distribución ordenada de tramas
+<br>
+-Control de flujo
+</div>
+          </div>
+
+<br><br>
+
+          <div class="card  ">
+            <div class="g" style="margin-right: 30px;margin-left: 30px">
+            <h4>capa3:"Capa de red"</h4>
+            <br>
+            La capa de red proporciona los medios necesarios para la transferencia de información entre sistemas finales a través de algún tipo de red de datos. De esta manera, las capas superiores no tienen que conocer la técnica de conmutación empleada o el camino que seguirá el mensaje hacia el destino.
+<br>
+Las unidades de información de esta capa se denominan paquetes.
+<br>
+Se encarga, entre otros, de los siguientes aspectos:
+<br><br>
+-Técnicas de conmutación <br>
+-Encaminamiento o enrutamiento <br>
+-Gestión de prioridades <br>
+-Control de la congestión <br>
+-Tarificación <br>
+-Interconexión de redes <br>
+-Direccionamiento (indentificación de sistemas) <br>
+</div>
+          </div>
+
+          <div class="card  ">
+            <div class="g" style="margin-right: 30px;margin-left: 30px">
+            <h4>capa4:"Capa de transporte"</h4>
+            <br>
+            La capa de transporte proporciona mecanismos de intercambio de datos entre sistemas finales o extremo a extremo. Este intercambio debe realizarse libre de errores, en consecuencia, sin pérdidas ni duplicados y cumpliendo los requisitos establecidos.
+
+La unidad de información de esta capa se denomina segmento o datagrama
+
+Es misión de esta capa:
+<br><br>
+-Recibir los datos del nivel superior, dividirlos (segmentación y reensamblado) si fuera necesario y enviarlos al nivel de red para que los transmita, asegurando que todos los trozos lleguen de manera correcta y eficiente al otro extremo (ordenación de paquetes). <br>
+Realizar un control de flujo de extremo a extremo. <br>
+Establecimiento, mantenimiento y cierre de la conexión. <br>
+-Optimizar el empleo del nivel de red (multiplexación/demultiplexación).<br>
+-Control de errores. <br>
+-Direccionamiento del punto de servicio.
+</div>
+          </div>
+
+
+
+          <div class="card  ">
+            <div class="g" style="margin-right: 30px;margin-left: 30px">
+            <h4>capa 5:"Capa de sesion"</h4>
+            <br>
+            datos. Por lo tanto, el servicio provisto por esta capa es la capacidad de asegurar que, dada una sesión establecida entre dos máquinas, la misma se pueda efectuar para las operaciones definidas de principio a fin, reanudándolas en caso de interrupción.
+<br>
+La capa de sesión proporciona los siguientes servicios:
+<br>br
+<b>Control del diálogo:</b>
+Éste puede ser simultáneo en los dos sentidos (full-duplex) o alternado en ambos sentidos (half-duplex). <br>
+<b>Agrupamiento:</b>
+El flujo de datos se puede marcar para definir grupos de datos.
+<b>Recuperación:</b>
+La capa de sesión puede proporcionar un procedimiento de puntos de comprobación, de forma que si ocurre algún tipo de fallo entre puntos de comprobación, la entidad de sesión puede retransmitir todos los datos desde el último punto de comprobación y no desde el principio.
+</div>
+          </div>
+
+
+          <div class="card  ">
+            <div class="g" style="margin-right: 30px;margin-left: 30px">
+            <h4>capa 6:"Capa de presentacion"</h4>
+            <br>
+            El objetivo de esta capa es encargarse de la representación de la información, de manera que aunque distintos equipos puedan tener diferentes representaciones internas de caracteres los datos lleguen de manera reconocible.
+<br>
+Esta capa es la primera en trabajar más el contenido de la comunicación que el cómo se establece la misma. En ella se tratan aspectos tales como la semántica y la sintaxis de los datos transmitidos, ya que distintas computadoras pueden tener diferentes formas de manejarlas.
+<br>
+La capa de presentación es la encargada de:
+ <br>
+-Definir el formato de los datos que se van a intercambiar entre las aplicaciones y ofrecer un conjunto de servicios de transformación de datos. <br>
+-Definir la sintaxis utilizada entre entidades de aplicación y proporcionar los medios para la selección y modificación de la representación utilizada.
+<br>
+Codificar los datos en modo estándar (enteros, reales, caracteres, etc.) y realizar funciones de compresión y cifrado de datos.
+
+</div>
+          </div>
+
+
+          <div class="card  ">
+            <div class="g" style="margin-right: 30px;margin-left: 30px">
+            <h4>capa 7:"Capa Aplicacion"</h4>
+            <br>
+           Ofrece a las aplicaciones (de usuario o no) la posibilidad de acceder a los servicios de las demás capas y define los protocolos que utilizan las aplicaciones para intercambiar datos, como correo electrónico (POP y SMTP), gestores de bases de datos y protocolos de transferencia de archivos (FTP)
+
+La capa de aplicación sirve como ventana a los usuarios y los procesos de las aplicaciones para acceder a servicios de red.
+
+Esta capa contiene una variedad de funciones de uso común:
+<br>
+-Compartición de recursos y redireccionamiento de dispositivos  <br>
+-Acceso remoto de archivos  <br>
+ -Acceso remoto a impresoras  <br>
+ -Comunicación entre procesos  <br>
+ -Administración de red  <br>
+ -Servicios de directorio  <br>
+ -Mensajería electrónica  <br>
+ -Terminales virtuales de red  <br>
+</div>
+          </div>
+         
+
+          </div>
+        </section>
+      <footer class="section footer-classic section-sm">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-3 wow fadeInLeft">
+              <a class="brand" href="index.html"><B>REDES INFORMATICAS</B></a>
+              
+            </div>
+            <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Inicio</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="about.html">Topologia</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="typography.html">Modelo TCP/IP</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="contacts.html">Modelo OSI</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="calculadora.html">calculadora</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="ipv4.html">ipv4</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="ipv6.html">ipv6</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            
+            <img src="images/about-1-570x703.jpg" style="width: 200px; height:  100px;" class="ml-5" alt="">
+          </div>
+        </div>
+        <div class="container wow fadeInUp" data-wow-delay=".4s">
+          <div class="footer-classic-aside">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>Hecho por Rossibel <a href="#"></a></p>
+            <img src="images/escudo.gif" style="width: 80px;height: 80px;" alt="">
+            <span>Materia redes</span>
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="snackbars" id="form-output-global"></div>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

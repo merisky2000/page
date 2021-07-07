@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html class="wide wow-animation" lang="en">
+<head>
+<title>Calculadora IP</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+   
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet" href="css/calculadora.css">
+
+
+
+
+
+
+<script type="text/javascript">
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42783197-2', 'virot.eu');
+  ga('send', 'pageview');
+
+</script>
+
+
+</head>
+
+<body>
+
+
+
+
+<div class="container">
+
+	<div class="row bg-primary">	
+		<div class="col-12 text-center">	
+<div class="btn-group" >
+
+                    <a class="rd-nav-link btn btn-primary" href="index.html">Inicio</a>
+                      
+                      <a class="rd-nav-link btn btn-primary" href="topologia.html">Topologia</a>
+                      
+                      <a class="rd-nav-link btn btn-primary" href="tcp.html">Modelo OSI</a>
+                      
+                     <a class="rd-nav-link btn btn-primary" href="osi.html"> Modelo TCP/IP</a>
+                     
+                      <a class="rd-nav-link btn btn-primary" href="calculadora.html">calculadora</a>
+                     
+                     <a class="rd-nav-link btn btn-primary" href="ipv4.html">ipv4</a>
+                    
+                  <a class="rd-nav-link btn btn-primary" href="ipv6.html">ipv6</a>
+                      
+		
+	</div>
+		</div></div>
+</div>
+<div class="container">
+<div class="container">		
+<div class="input">
+<h5>VALORES DE ENTRADA</h5>
+<form name="input" action="post">
+Direccion IP:
+<input type="text" name="in_address" value="127.0.0.1" onkeyup="ipChange()" />
+SubRet:
+<input type="text" name="in_subnet" value="255.0.0.0" onkeyup="subChange()" />
+<div id='is_valid' class='is_valid' style="background-color:#E6E6FA">La IP INTRODUCIDA ES: ......................................</div>
+</form>
+</div>
+</div>
+</div>
+<div class="container">
+	<div class="topsection"> <button class="btn btn-primary">
+<a  href="#" onclick="changeSection('calc')" id="calcSelector" class="btn btn-primary"><span class="btn btn-primary">calcular IP</span></a></button>
+<button class="btn btn-danger">
+<a href="#" onclick="changeSection('static')" id="staticSelector" class="btn btn-danger"><span class="btn btn-danger">MASCARA SUBRED</span></a></button>
+
+
+</div>
+<div id="javascriptRequired">
+
+</div>
+<div class="section" id="calc">
+
+<div class="output">
+<h2>VALORS DE SALIDA</h2>
+<form name="output" action="post">
+<table>
+<tr><td>DIRECCION IP :</td><td><input type="text" name="out_address" disabled="disabled" /></td><td>First usable:</td><td><input type="text" name="out_firstusable" disabled="disabled" /></td></tr>
+<tr><td>Subnet:</td><td><input type="text" name="out_subnet" disabled="disabled" /></td><td>Last usable:</td><td><input type="text" name="out_lastusable" disabled="disabled" /></td></tr>
+<tr><td>CIDR:</td><td><input type="text" name="out_cidr" disabled="disabled" /></td><td>Amount of usable:</td><td><input type="text" name="out_amountaddresses" disabled="disabled" /></td></tr>
+<tr><td>DIRECCION DE RED:</td><td><input type="text" name="out_netaddr" disabled="disabled" /></td><td>Reverse address:</td><td><input type="text" name="out_ptraddr" disabled="disabled" /></td></tr>
+<tr><td>Broadcast address:</td><td><input type="text" name="out_bcast" disabled="disabled" /></td><td>Unused:</td><td><input type="text" name="out_unused" disabled="disabled" /></td></tr>
+</table>
+</form>
+</div>
+</div>
+<div class="section" id="static">
+<h2>Static subnetting</h2>
+<table class="static" id=" tabla2">
+<tr><th>CIDR</th><th>Subnet mask</th><th>Binary</th><th>Addresses</th><th>Usable hosts</th></tr>
+<tr><td>/1</td><td>128.0.0.0</td><td>10000000.00000000.00000000.00000000</td><td class="static-r">2147483648</td><td class="static-r">2147483646</td></tr>
+<tr><td>/2</td><td>192.0.0.0</td><td>11000000.00000000.00000000.00000000</td><td class="static-r">1073741824</td><td class="static-r">1073741822</td></tr>
+<tr><td>/3</td><td>224.0.0.0</td><td>11100000.00000000.00000000.00000000</td><td class="static-r">536870912</td><td class="static-r">536870910</td></tr>
+<tr><td>/4</td><td>240.0.0.0</td><td>11110000.00000000.00000000.00000000</td><td class="static-r">268435456</td><td class="static-r">268435454</td></tr>
+<tr><td>/5</td><td>248.0.0.0</td><td>11111000.00000000.00000000.00000000</td><td class="static-r">134217728</td><td class="static-r">134217726</td></tr>
+<tr><td>/6</td><td>252.0.0.0</td><td>11111100.00000000.00000000.00000000</td><td class="static-r">67108864</td><td class="static-r">67108862</td></tr>
+<tr><td>/7</td><td>254.0.0.0</td><td>11111110.00000000.00000000.00000000</td><td class="static-r">33554432</td><td class="static-r">33554430</td></tr>
+<tr><td>/8</td><td>255.0.0.0</td><td>11111111.00000000.00000000.00000000</td><td class="static-r">16777216</td><td class="static-r">16777214</td></tr>
+<tr><td>/9</td><td>255.128.0.0</td><td>11111111.10000000.00000000.00000000</td><td class="static-r">8388608</td><td class="static-r">8388606</td></tr>
+<tr><td>/10</td><td>255.192.0.0</td><td>11111111.11000000.00000000.00000000</td><td class="static-r">4194304</td><td class="static-r">4194302</td></tr>
+<tr><td>/11</td><td>255.224.0.0</td><td>11111111.11100000.00000000.00000000</td><td class="static-r">2097152</td><td class="static-r">2097150</td></tr>
+<tr><td>/12</td><td>255.240.0.0</td><td>11111111.11110000.00000000.00000000</td><td class="static-r">1048576</td><td class="static-r">1048574</td></tr>
+<tr><td>/13</td><td>255.248.0.0</td><td>11111111.11111000.00000000.00000000</td><td class="static-r">524288</td><td class="static-r">524286</td></tr>
+<tr><td>/14</td><td>255.252.0.0</td><td>11111111.11111100.00000000.00000000</td><td class="static-r">262144</td><td class="static-r">262142</td></tr>
+<tr><td>/15</td><td>255.254.0.0</td><td>11111111.11111110.00000000.00000000</td><td class="static-r">131072</td><td class="static-r">131070</td></tr>
+<tr><td>/16</td><td>255.255.0.0</td><td>11111111.11111111.00000000.00000000</td><td class="static-r">65536</td><td class="static-r">65534</td></tr>
+<tr><td>/17</td><td>255.255.128.0</td><td>11111111.11111111.10000000.00000000</td><td class="static-r">32768</td><td class="static-r">32766</td></tr>
+<tr><td>/18</td><td>255.255.192.0</td><td>11111111.11111111.11000000.00000000</td><td class="static-r">16384</td><td class="static-r">16382</td></tr>
+<tr><td>/19</td><td>255.255.224.0</td><td>11111111.11111111.11100000.00000000</td><td class="static-r">8192</td><td class="static-r">8190</td></tr>
+<tr><td>/20</td><td>255.255.240.0</td><td>11111111.11111111.11110000.00000000</td><td class="static-r">4096</td><td class="static-r">4094</td></tr>
+<tr><td>/21</td><td>255.255.248.0</td><td>11111111.11111111.11111000.00000000</td><td class="static-r">2048</td><td class="static-r">2046</td></tr>
+<tr><td>/22</td><td>255.255.252.0</td><td>11111111.11111111.11111100.00000000</td><td class="static-r">1024</td><td class="static-r">1022</td></tr>
+<tr><td>/23</td><td>255.255.254.0</td><td>11111111.11111111.11111110.00000000</td><td class="static-r">512</td><td class="static-r">510</td></tr>
+<tr><td>/24</td><td>255.255.255.0</td><td>11111111.11111111.11111111.00000000</td><td class="static-r">256</td><td class="static-r">254</td></tr>
+<tr><td>/25</td><td>255.255.255.128</td><td>11111111.11111111.11111111.10000000</td><td class="static-r">128</td><td class="static-r">126</td></tr>
+<tr><td>/26</td><td>255.255.255.192</td><td>11111111.11111111.11111111.11000000</td><td class="static-r">64</td><td class="static-r">62</td></tr>
+<tr><td>/27</td><td>255.255.255.224</td><td>11111111.11111111.11111111.11100000</td><td class="static-r">32</td><td class="static-r">30</td></tr>
+<tr><td>/28</td><td>255.255.255.240</td><td>11111111.11111111.11111111.11110000</td><td class="static-r">16</td><td class="static-r">14</td></tr>
+<tr><td>/29</td><td>255.255.255.248</td><td>11111111.11111111.11111111.11111000</td><td class="static-r">8</td><td class="static-r">6</td></tr>
+<tr><td>/30</td><td>255.255.255.252</td><td>11111111.11111111.11111111.11111100</td><td class="static-r">4</td><td class="static-r">2</td></tr>
+<tr><td>/31</td><td>255.255.255.254</td><td>11111111.11111111.11111111.11111110</td><td class="static-r">2</td><td class="static-r">0</td></tr>
+<tr><td>/32</td><td>255.255.255.255</td><td>11111111.11111111.11111111.11111111</td><td class="static-r">1</td><td class="static-r">0</td></tr>
+</table>
+
+</div>
+</div>
+<footer class="section footer-classic section-sm">
+        <div class="container">
+          <div class="row row-30">
+            <div class="col-lg-3 wow fadeInLeft">
+              <a class="brand" href="index.html"><B>REDES INFORMATICAS</B></a>
+              
+            </div>
+            <div class="rd-navbar-main-element">
+                  <div class="rd-navbar-nav-wrap">
+                    <ul class="rd-navbar-nav">
+                      <li class="rd-nav-item active"><a class="rd-nav-link" href="index.html">Inicio</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="topologia.html">Topologia</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="tcp.html">Modelo OSI</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="osi.html"> Modelo TCP/IP</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="calculadora.html">calculadora</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="ipv4.html">ipv4</a>
+                      </li>
+                      <li class="rd-nav-item"><a class="rd-nav-link" href="ipv6.html">ipv6</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            
+            <img src="images/about-1-570x703.jpg" style="width: 200px; height:  100px;" class="ml-5" alt="">
+          </div>
+        </div>
+        <div class="container wow fadeInUp" data-wow-delay=".4s">
+          <div class="footer-classic-aside">
+            <p class="rights"><span>&copy;&nbsp;</span><span class="copyright-year"></span>Hecho por Rossibel Roa <a href="#"></a></p>
+            <img src="images/escudo.gif" style="width: 80px;height: 80px;" alt="">
+            <span>Materia redes</span>
+            
+          </div>
+        </div>
+      </footer>
+<script src="js/calculate.js"></script>
+<script type="text/javascript">
+function testForJavaScript() {
+//When page + Javascript is loaded hide javascript requirement
+document.getElementById('javascriptRequired').style.visibility="hidden";
+document.getElementById('javascriptRequired').style.margin="0px"
+document.getElementById('javascriptRequired').style.height="0px"
+document.getElementById('javascriptRequired').style.padding="0px"
+changeSection('calc')
+}
+if (window.addEventListener)
+window.addEventListener("load", testForJavaScript, false);
+else if (window.attachEvent)
+window.attachEvent("onload", testForJavaScript);
+else window.onload = testForJavaScript;
+</script>
+</body>
+</html>

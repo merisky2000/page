@@ -1,0 +1,100 @@
+div.input {
+  border-style:solid;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+  border-bottom-width:0px;
+}
+div.output {
+  border-style:solid;
+  width: 97%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 5px 5px 5px 5px;
+}
+
+.marginall
+{
+  margin-top: 30px;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+div.section {
+  border-style:solid;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 0px 0px 20px 20px;
+  padding: 5px 5px 5px 5px;
+  border-top-width: 0px;
+}
+div.hiddensection {
+  height: 0px;
+  visibility:hidden;
+  margin=0px;
+}
+div.topsection {
+  border-style:solid;
+  width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px 20px 0px 0px;
+  padding: 5px 5px 5px 5px;
+  border-bottom-width:0px
+}
+#javascriptRequired {
+  color:red;
+  border-style:solid;
+  width: 640px;
+  border-color:black;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 5px 5px 5px;
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+}
+h2 {
+  text-align:center;
+  margin: 3px;
+}
+div.is_valid {
+  border-radius:0px 0px 10px 10px;
+  min-height:20px;
+  min-width:80px;
+  text-align:justify;
+  padding: 0px 5px 0px 5px
+}
+div.is_valid:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+table.static {
+  border-style:solid;
+  border-spacing: 0px;
+  padding: 0px;
+  border-collapse: collapse;
+  margin-left: auto;
+  margin-right: auto;
+}
+.static td, .static th {
+  border-style:dashed dashed solid solid;
+  border-spacing: 0px;
+  border-width: 1px 1px 0px 0px;
+}
+td.static-r, th.static-r {
+  border-style:dashed dashed solid solid;
+  border-spacing: 0px;
+  border-width: 1px 1px 0px 0px;
+  text-align:right;
+}
+
+
+.COLOR{
+  background: #FFF;
+  height: 4vh;
+}
